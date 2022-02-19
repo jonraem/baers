@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "description": "Bärs Nest - A nest for Cock Bärs",
+  "author": "Joni Rämö <yotara91@gmail.com>",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
@@ -17,7 +18,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/e2e/jest-e2e.json"
   },
   "dependencies": {
     "@nestjs/common": "^8.1.1",
@@ -56,8 +57,7 @@
       "json",
       "ts"
     ],
-    "rootDir": "src",
-    "testRegex": ".*\\.spec\\.ts$",
+    "testRegex": "/test/.*\\.spec\\.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
