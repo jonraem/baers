@@ -2,13 +2,11 @@
   "name": "baers",
   "private": true,
   "version": "0.1.0",
-  "description": "Programmatically honor the cock Pärssinen (Bärs or Baers).",
   "author": "Joni Rämö <yotara91@gmail.com>",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "cock",
@@ -17,28 +15,9 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.17.4",
-    "@babel/preset-env": "^7.16.11",
-    "@types/jest": "^27.4.0",
-    "babel-jest": "^27.5.1",
-    "jest": "^27.5.1"
+    "@babel/preset-env": "^7.16.11"
   },
   "babel": {
     "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]]
-  },
-  "jest": {
-    "verbose": true,
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "json",
-      "node"
-    ],
-    "modulePathIgnorePatterns": [
-      "<rootDir>/dist/"
-    ],
-    "transformIgnorePatterns": [
-      "<rootDir>/node_modules/"
-    ],
-    "clearMocks": true
   }
 }
